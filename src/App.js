@@ -8,7 +8,7 @@ import ContactMe from "./components/screens/ContactMe"
 
 function App(props) {
   return (
-    <div className="row grey lighten-2">
+    <div className="row blue-grey lighten-2">
       <Navbar/>
       <Switch>
         <Route exact path="/">
