@@ -3,19 +3,19 @@ import React from 'react'
 function Home(props){
     return(
         <div>
-            <div className="card light-green lighten-3">
+            <div className="card">
                 <h1>Nathan Melnyk</h1>
                 <p>About Me</p>
             </div>
 
-            <div className="card light-green lighten-3">
+            <div className="card">
                 <div className="card-content">
                     My Skills
                 </div>
 
                 <div className="card-tabs">
                     <ul className="tabs tabs-fixed-width">
-                        <li className="tab blue-grey lighten-3"><a href="#skill one">Skill One</a></li>
+                        <li className="tab"><a href="#skill one">Skill One</a></li>
                         <li className="tab"><a href="#skill two">Skill Two</a></li>
                         <li className="tab"><a href="#skill three">Skill Three</a></li>
                         <li className="tab"><a href="#...">...</a></li>
