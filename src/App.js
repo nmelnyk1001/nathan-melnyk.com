@@ -8,7 +8,7 @@ import ContactMe from "./components/screens/ContactMe"
 
 function App(props) {
   return (
-    <div className="blue-grey lighten-2">
+    <div className="App blue-grey lighten-2">
       <div className="container">
         <Navbar />
         <Switch>
@@ -23,7 +23,7 @@ function App(props) {
           </Route>
         </Switch>
       </div>
-    </div>
+      </div>
   );
 }
 
