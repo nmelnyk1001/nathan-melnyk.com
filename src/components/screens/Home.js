@@ -14,7 +14,7 @@ function Home(props){
         }
     }
     function decreaseSkill(){
-        if (skill !== 0){
+        if (skill !== 1){
             setSkill(skill-1)
         }
     }
@@ -31,7 +31,7 @@ function Home(props){
                 </div>
             </div>
 
-            <ul className="pagination row">
+            <ul className="pagination card row">
                 <li 
                     className={skill !==1 ? active_skill_change_style : disabled_skill_change_style} 
                     onClick={()=>decreaseSkill()}>            
