@@ -8,19 +8,21 @@ import ContactMe from "./components/screens/ContactMe"
 
 function App(props) {
   return (
-    <div className="row blue-grey lighten-2">
-      <Navbar/>
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/projects">
-          <Projects />
-        </Route>
-        <Route path="/contact_me">
-          <ContactMe />
-        </Route>
-      </Switch>
+    <div className="blue-grey lighten-2">
+      <div className="container">
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+          <Route path="/contact_me">
+            <ContactMe />
+          </Route>
+        </Switch>
+      </div>
     </div>
   );
 }
