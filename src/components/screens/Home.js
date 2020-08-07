@@ -3,8 +3,21 @@ import React from 'react'
 function Home(props){
     const [skill, setSkill] = React.useState(1)
 
+    const disabled_skill_change_style="disabled col s1"
+    const active_skill_change_style="active col s1"
     const disabled_skill_style="wave-effect col s1"
     const active_skill_style="active col s1"
+
+    function increaseSkill(){
+        if (skill !== 10){
+            setSkill(skill+1)
+        }
+    }
+    function decreaseSkill(){
+        if (skill !== 0){
+            setSkill(skill-1)
+        }
+    }
 
     return(
         <div>
@@ -19,7 +32,13 @@ function Home(props){
             </div>
 
             <ul className="pagination row">
-                <li className="disabled col s1" onClick={()=>setSkill(skill-1)}>            <a href="#!">           <i class="material-icons">chevron_left</i>      </a>        </li>
+                <li 
+                    className={skill !==1 ? active_skill_change_style : disabled_skill_change_style} 
+                    onClick={()=>decreaseSkill()}>            
+                        <a href="#!">           
+                            <i class="material-icons">chevron_left</i>      
+                        </a>       
+                </li>
 
                 <li className={skill === 1 ? active_skill_style : disabled_skill_style} onClick={()=>setSkill(1)}>        <a href="#!">1</a>      </li>
                 <li className={skill === 2 ? active_skill_style : disabled_skill_style} onClick={()=>setSkill(2)}>        <a href="#!">2</a>      </li>
@@ -32,7 +51,13 @@ function Home(props){
                 <li className={skill === 9 ? active_skill_style : disabled_skill_style} onClick={()=>setSkill(9)}>        <a href="#!">9</a>      </li>
                 <li className={skill === 10 ? active_skill_style : disabled_skill_style} onClick={()=>setSkill(10)}>       <a href="#1">10</a>     </li>
 
-                <li className="active col s1" onClick={()=>setSkill(skill+1)}>              <a href="#!">           <i class="material-icons">chevron_right</i>     </a>        </li>
+                <li 
+                    className={skill !== 10 ? active_skill_change_style : disabled_skill_change_style} 
+                    onClick={()=>increaseSkill()}>              
+                        <a href="#!">           
+                            <i class="material-icons">chevron_right</i>     
+                        </a>        
+                </li>
             </ul>
         </div>
     )
