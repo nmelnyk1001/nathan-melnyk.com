@@ -7,7 +7,7 @@ function Navbar(props){
             <div className="container row">
                 <Link to="/" className="waves-effect btn-flat col s4">Home</Link>
                 <Link to="/projects" className="waves-effect btn-flat col s4">Projects</Link>
-                <Link to="/contact_me" classname="waves-effect btn-flat col s4">Contact Me</Link>
+                <Link to="/contact_me" className="waves-effect btn-flat col s4">Contact Me</Link>
             </div>
         </div>
     )
