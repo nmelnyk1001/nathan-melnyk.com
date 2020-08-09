@@ -2,14 +2,10 @@ import React from 'react'
 
 import useSkill from "../hooks/useSkill"
 function Home(props){
-     const {skill, setSkill, increaseSkill, decreaseSkill, displaySkill} = useSkill()
+    const {skill, setSkill, increaseSkill, decreaseSkill, displaySkill, getPageStyle} = useSkill()
 
     const disabled_skill_change_style="disabled col s1"
     const active_skill_change_style="active col s1"
-    const disabled_skill_style="wave-effect col s1"
-    const active_skill_style="active col s1"
-
-
 
     return(
         <div style={{padding:20}}>
@@ -33,16 +29,16 @@ function Home(props){
                         </a>       
                 </li>
 
-                <li className={skill === 1 ? active_skill_style : disabled_skill_style} onClick={()=>setSkill(1)}>        <a href="#!">1</a>      </li>
-                <li className={skill === 2 ? active_skill_style : disabled_skill_style} onClick={()=>setSkill(2)}>        <a href="#!">2</a>      </li>
-                <li className={skill === 3 ? active_skill_style : disabled_skill_style} onClick={()=>setSkill(3)}>        <a href="#!">3</a>      </li>
-                <li className={skill === 4 ? active_skill_style : disabled_skill_style} onClick={()=>setSkill(4)}>        <a href="#!">4</a>      </li>
-                <li className={skill === 5 ? active_skill_style : disabled_skill_style} onClick={()=>setSkill(5)}>        <a href="#!">5</a>      </li>
-                <li className={skill === 6 ? active_skill_style : disabled_skill_style} onClick={()=>setSkill(6)}>        <a href="#!">6</a>      </li>
-                <li className={skill === 7 ? active_skill_style : disabled_skill_style} onClick={()=>setSkill(7)}>        <a href="#!">7</a>      </li>
-                <li className={skill === 8 ? active_skill_style : disabled_skill_style} onClick={()=>setSkill(8)}>        <a href="#!">8</a>      </li>
-                <li className={skill === 9 ? active_skill_style : disabled_skill_style} onClick={()=>setSkill(9)}>        <a href="#!">9</a>      </li>
-                <li className={skill === 10 ? active_skill_style : disabled_skill_style} onClick={()=>setSkill(10)}>       <a href="#1">10</a>     </li>
+                <li className={getPageStyle(1)} onClick={()=>setSkill(1)}>        <a href="#!">1</a>      </li>
+                <li className={getPageStyle(2)} onClick={()=>setSkill(2)}>        <a href="#!">2</a>      </li>
+                <li className={getPageStyle(3)} onClick={()=>setSkill(3)}>        <a href="#!">3</a>      </li>
+                <li className={getPageStyle(4)} onClick={()=>setSkill(4)}>        <a href="#!">4</a>      </li>
+                <li className={getPageStyle(5)} onClick={()=>setSkill(5)}>        <a href="#!">5</a>      </li>
+                <li className={getPageStyle(6)} onClick={()=>setSkill(6)}>        <a href="#!">6</a>      </li>
+                <li className={getPageStyle(7)} onClick={()=>setSkill(7)}>        <a href="#!">7</a>      </li>
+                <li className={getPageStyle(8)} onClick={()=>setSkill(8)}>        <a href="#!">8</a>      </li>
+                <li className={getPageStyle(9)} onClick={()=>setSkill(9)}>        <a href="#!">9</a>      </li>
+                <li className={getPageStyle(10)} onClick={()=>setSkill(10)}>      <a href="#1">10</a>     </li>
 
                 <li 
                     className={skill !== 10 ? active_skill_change_style : disabled_skill_change_style} 

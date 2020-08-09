@@ -3,6 +3,9 @@ import React, {useState} from "react"
 function useSkill(){
     const [skill, setSkill] = useState(1)
 
+    const disabled_skill_style = "wave-effect col s1"
+    const active_skill_style = "active col s1"
+
     function increaseSkill() {
         if (skill !== 10) {
             setSkill(skill + 1)
@@ -12,6 +15,10 @@ function useSkill(){
         if (skill !== 1) {
             setSkill(skill - 1)
         }
+    }
+
+    function getPageStyle(pageNum){
+        return skill === pageNum ? active_skill_style : disabled_skill_style
     }
 
     function displaySkill(skill) {
@@ -102,7 +109,7 @@ function useSkill(){
         }
     }
 
-    return {skill, setSkill, increaseSkill, decreaseSkill, displaySkill}
+    return {skill, setSkill, increaseSkill, decreaseSkill, displaySkill, getPageStyle}
 }
 
 export default useSkill
