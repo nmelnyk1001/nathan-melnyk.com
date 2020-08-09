@@ -25,6 +25,11 @@ function ContactMe(props){
                 <p style={textStyle}>nmelnyk1001@gmail.com</p>
                 {/*<textarea style={{display:"inline", width:"auto", height:"auto"}}></textarea>*/}
             </div>
+
+            <div className="card" style={{padding:10, position:"relative"}}>
+                <img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="LinkedIn Logo" height="100" width="100" style={{display:"inline"}}/>
+                <p style={textStyle}>www.linkedin.com/in/nathan-melnyk</p>
+            </div>
         </div>
     )
 }
