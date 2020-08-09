@@ -20,8 +20,10 @@ function ContactMe(props){
                 <p style={textStyle}>https://github.com/nmelnyk1001</p>
             </div>
 
-            <div className="card" style={{padding:10}}>
-                <img src="https://image.flaticon.com/icons/svg/281/281769.svg" alt="gmail logo" height="100" width="100"/>
+            <div className="card" style={{padding:10, position:"relative"}}>
+                <img src="https://image.flaticon.com/icons/svg/281/281769.svg" alt="gmail logo" height="100" width="100" style={{display:"inline"}}/>
+                <p style={textStyle}>nmelnyk1001@gmail.com</p>
+                {/*<textarea style={{display:"inline", width:"auto", height:"auto"}}></textarea>*/}
             </div>
         </div>
     )
