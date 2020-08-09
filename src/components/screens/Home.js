@@ -108,9 +108,9 @@ function Home(props){
     }
 
     return(
-        <div>
+        <div style={{padding:20}}>
             <div className="card">
-                <h1 style={{padding:10}}>Nathan Melnyk</h1>
+                <h1 style={{padding:10, textAlign:"center"}}>Nathan Melnyk</h1>
             </div>
 
             {
