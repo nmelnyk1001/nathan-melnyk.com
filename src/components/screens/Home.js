@@ -25,7 +25,7 @@ function Home(props){
                     className={skill !==1 ? active_skill_change_style : disabled_skill_change_style} 
                     onClick={()=>decreaseSkill()}>            
                         <a href="#!">           
-                            <i class="material-icons">chevron_left</i>      
+                            <i className="material-icons">chevron_left</i>      
                         </a>       
                 </li>
 
@@ -44,7 +44,7 @@ function Home(props){
                     className={skill !== 10 ? active_skill_change_style : disabled_skill_change_style} 
                     onClick={()=>increaseSkill()}>              
                         <a href="#!">           
-                            <i class="material-icons">chevron_right</i>     
+                            <i className="material-icons">chevron_right</i>     
                         </a>        
                 </li>
             </ul>

@@ -12,7 +12,7 @@ function ContactMe(props){
             <div className="card" style={{padding:10}}>
                 <span className="card-title">Nathan Melnyk</span>
                 <p>Phone Number: +1(631)452-4263</p>
-                <p>East Setauket, New York</p>
+                <p>Long Island, New York</p>
             </div>
 
             <div className="card" style={{padding:10, position:"relative"}}>
