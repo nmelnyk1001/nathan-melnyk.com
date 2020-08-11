@@ -5,14 +5,16 @@ import {goHome, goProjects, goContactMe} from "../redux/currentScreen"
 
 function Navbar(props){
     const buttonClass="waves-effect btn-flat col s4"
-    const currentClass="waves-effect btn-flat col s4 grey darken-1"
+    const currentClass="waves-effect btn-flat col s4 grey lighten-1"
+
+    console.log(props.screen)
 
     return(
         <div className="card">
             <div className="container row">
-                <Link to="/"            className={props.screen === "HOME" ? currentClass : buttonClass}        onClick={props.goHome}>Home</Link>
-                <Link to="/projects"    className={props.screen === "PROJECTS" ? currentClass : buttonClass}    onClick={props.goProjects}>Projects</Link>
-                <Link to="/contact_me"  className={props.screen === "CONTACT_ME" ? currentClass : buttonClass}  onClick={props.goContactMe}>Contact Me</Link>
+                <Link to="/"            className={props.state.screen === "HOME" ? currentClass : buttonClass}        onClick={props.goHome}>Home</Link>
+                <Link to="/projects"    className={props.state.screen === "PROJECTS" ? currentClass : buttonClass}    onClick={props.goProjects}>Projects</Link>
+                <Link to="/contact_me"  className={props.state.screen === "CONTACT_ME" ? currentClass : buttonClass}  onClick={props.goContactMe}>Contact Me</Link>
             </div>
         </div>
     )
@@ -20,7 +22,7 @@ function Navbar(props){
 
 function mapStateToProps(globalState){
     return {
-        screen:globalState
+        state:globalState
     }
 }
 
