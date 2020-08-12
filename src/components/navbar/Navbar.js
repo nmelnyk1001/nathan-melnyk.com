@@ -7,8 +7,6 @@ function Navbar(props){
     const buttonClass="waves-effect btn-flat col s4"
     const currentClass="waves-effect btn-flat col s4 grey lighten-1"
 
-    console.log(props.screen)
-
     return(
         <div className="card">
             <div className="container row">

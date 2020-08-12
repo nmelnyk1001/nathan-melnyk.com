@@ -13,9 +13,22 @@ function Home(props){
                 <h1 style={{padding:10, textAlign:"center"}}>Nathan Melnyk</h1>
             </div>
 
-            {
+        <div className="card" style={{padding:10}}>
+            <span className="card-title"></span>
+            <p>
+                Good day! I'm a college student attending Stonybrook University, set to graduate December 2020.
+                Outside of school I'm an avid athlete and craftsperson! 
+            </p>
+            <p>
+                In 2017, I became a gold medalist in the Junior Division of the World Team Cup, held in Sardinia, Italy.
+                To this day, I'm part of the High Performance team for the USTA.
+            </p>
+            <p>
+                In addition, I crochet and knit for stress relief! Creating beautiful scarves, beanies, and even plushies both from patterns and scratch.
 
-            }
+                Finally, I'm an experimenting home cook and baker, trying to further my skills in the free time I have.
+            </p>
+        </div>
             <div className="card ">
                 {displaySkill(skill)}
             </div>
