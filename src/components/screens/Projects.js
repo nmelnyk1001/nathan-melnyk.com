@@ -3,14 +3,14 @@ import React from 'react'
 function Projects(props){
     return(
         <div>
-            <div className="card" style={{padding:10}}>
+            <div className="card" style={{ padding: 10, background: "#F1F7ED"}}>
                 <span className="card-title">Personal Website</span>
                 <p>
                     React based frontend, styled with Materialize CSS. Hosted on an instance from Google Cloud Platform.
                     SSL certified for HTTPS use.
                 </p>
             </div>
-            <div className="card" style={{ padding: 10 }}>
+            <div className="card" style={{ padding: 10, background: "#F1F7ED" }}>
                 <span className="card-title">College 4 Me</span>
                 <p>
                     Four person group project.
@@ -18,7 +18,7 @@ function Projects(props){
                     Converted group created wireframes into React based frontend.
                 </p>
             </div>
-            <div className="card" style={{ padding: 10 }}>
+            <div className="card" style={{ padding: 10, background: "#F1F7ED" }}>
                 <span className="card-title">Discord Birthday Bot</span>
                 <p>
                     Discord bot built using Discord.JS, hosted on Google Cloud Platform.
@@ -26,14 +26,14 @@ function Projects(props){
                     Cron runs scheduled tasks to congratulate users on their birthdays.
                 </p>
             </div>
-            <div className="card" style={{ padding: 10 }}>
+            <div className="card" style={{ padding: 10, background: "#F1F7ED" }}>
                 <span className="card-title">Financial Model Text Converter</span>
                 <p>
                     Excel macro written in Visual Basic, commissioned by Torreya Partners, a boutique investment bank.
                     It converts background color of an Excel workbook based on the source and value of each cell.
                 </p>
             </div>
-            <div className="card" style={{ padding: 10 }}>
+            <div className="card" style={{ padding: 10, background: "#F1F7ED" }}>
                 <span className="card-title">Twitter Clone</span>
                 <p>
                     Worked on as a two person team. TwitterClone is a flask server made to resemble Twitter.

@@ -9,11 +9,11 @@ function Home(props){
 
     return(
         <div>
-            <div className="card">
+            <div className="card" style={{ background: "#F1F7ED"}}>
                 <h1 style={{padding:10, textAlign:"center"}}>Nathan Melnyk</h1>
             </div>
 
-        <div className="card" style={{padding:10}}>
+            <div className="card" style={{ padding: 10, background: "#F1F7ED"}}>
             <span className="card-title"></span>
             <p>
                 Good day! I'm a college student attending Stonybrook University, set to graduate December 2020. 
@@ -31,11 +31,11 @@ function Home(props){
                 Finally, I'm an enthusiastic home cook and baker, trying to further my skills in the free time I have.
             </p>
         </div>
-            <div className="card ">
+            <div className="card" style={{ background: "#F1F7ED"}}>
                 {displaySkill(skill)}
             </div>
 
-            <ul className="pagination card row">
+            <ul className="pagination card row" style={{ background: "#F1F7ED"}}>
                 <li 
                     className={skill !==1 ? active_skill_change_style : disabled_skill_change_style} 
                     onClick={()=>decreaseSkill()}>            
