@@ -2,28 +2,28 @@ import React from 'react'
 
 function Projects(props){
     return(
-        <div style={{padding:20}}>
+        <div>
             <div className="card" style={{padding:10}}>
                 <span className="card-title">Personal Website</span>
                 <p>
-                    Website designed and programmed by myself. Designed using Materialize CSS library and written in React.
-                    Hosted on Google Cloud Services, with an SSL certificate.
+                    React based frontend, styled with Materialize CSS. Hosted on an instance from Google Cloud Platform.
+                    SSL certified for HTTPS use.
                 </p>
             </div>
             <div className="card" style={{ padding: 10 }}>
                 <span className="card-title">College 4 Me</span>
                 <p>
-                    A four person group project.
+                    Four person group project.
                     College 4 Me is a web based app that generates college recommendations for student users. 
-                    Written on a Node.JS server, MongoDB database, React frontend, and designed based on team created UML diagrams. 
+                    Converted group created wireframes into React based frontend.
                 </p>
             </div>
             <div className="card" style={{ padding: 10 }}>
                 <span className="card-title">Discord Birthday Bot</span>
                 <p>
-                    Discord bot built on top of a Node.JS server, hosted on Google Cloud Services.
-                    Allows users to input birthdays, which are stored on a SQLite database.
-                    Cron runs scheduled tasks at the end of each day to congratulate users on their birthday.
+                    Discord bot built using Discord.JS, hosted on Google Cloud Platform.
+                    Allows users to input birthdays, which are stored in a SQLite database.
+                    Cron runs scheduled tasks to congratulate users on their birthdays.
                 </p>
             </div>
             <div className="card" style={{ padding: 10 }}>
@@ -36,10 +36,10 @@ function Projects(props){
             <div className="card" style={{ padding: 10 }}>
                 <span className="card-title">Twitter Clone</span>
                 <p>
-                    Created by a two person group. TwitterClone is a flask server made to resemble Twitter.
-                    It's hosted on Google Cloud Services across multiple instances to accommodate large amounts of traffic.
-                    I wrote the frontend in pure Javascript based on a MCV model. 
-                    Backend was programmed by partner using a MySQL and MongoDB database.
+                    Worked on as a two person team. TwitterClone is a flask server made to resemble Twitter.
+                    Hosted on Google Cloud Platform across multiple instances to accommodate large amounts of traffic.
+                    Wrote the frontend using pure Javascript. 
+                    Backend written by partner using a MySQL database.
                 </p>
             </div>
         </div>

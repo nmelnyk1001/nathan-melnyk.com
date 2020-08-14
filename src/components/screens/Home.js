@@ -8,7 +8,7 @@ function Home(props){
     const active_skill_change_style="active col s1"
 
     return(
-        <div style={{padding:20}}>
+        <div>
             <div className="card">
                 <h1 style={{padding:10, textAlign:"center"}}>Nathan Melnyk</h1>
             </div>
@@ -16,7 +16,8 @@ function Home(props){
         <div className="card" style={{padding:10}}>
             <span className="card-title"></span>
             <p>
-                Good day! I'm a college student attending Stonybrook University, set to graduate December 2020.
+                Good day! I'm a college student attending Stonybrook University, set to graduate December 2020. 
+                During my school career, I became the treasurer for the Science Fiction Forum for two years, budgeting for events, library items, and even our 50th anniversary.
                 Outside of school I'm an avid athlete and craftsperson! 
             </p>
             <p>
@@ -25,8 +26,9 @@ function Home(props){
             </p>
             <p>
                 In addition, I crochet and knit for stress relief! Creating beautiful scarves, beanies, and even plushies both from patterns and scratch.
-
-                Finally, I'm an experimenting home cook and baker, trying to further my skills in the free time I have.
+            </p>
+            <p>
+                Finally, I'm an enthusiastic home cook and baker, trying to further my skills in the free time I have.
             </p>
         </div>
             <div className="card ">

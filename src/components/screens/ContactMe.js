@@ -8,7 +8,7 @@ function ContactMe(props){
     }
 
     return(
-        <div style={{padding:20}}>
+        <div>
             <div className="card" style={{padding:10}}>
                 <span className="card-title">Nathan Melnyk</span>
                 <p>Phone Number: +1(631)452-4263</p>
