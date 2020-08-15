@@ -8,7 +8,7 @@ import ContactMe from "./components/screens/ContactMe"
 
 function App(props) {
   return (
-    <div className="App" style={{padding:20, background:"#243E36"}}>
+    <div className="App" style={{padding:20, background:"#BAC7BE"}}>
       <div className="container">
         <Navbar />
         <Switch>

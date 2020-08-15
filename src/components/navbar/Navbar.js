@@ -5,10 +5,10 @@ import {goHome, goProjects, goContactMe} from "../redux/currentScreen"
 
 function Navbar(props){
     const buttonClass="waves-effect btn-flat col s4"
-    const currentStyle={background:"#E0EEC6"}
+    const currentStyle={background:"#80AB82"}
 
     return(
-        <div className="card" style={{ background:"#F1F7ED"}}>
+        <div className="card" style={{ background:"#C2E1C2"}}>
             <div className="container row">
                 <Link to="/"            className={buttonClass} style={props.state.screen === "HOME" ? currentStyle : null}        onClick={props.goHome}>Home</Link>
                 <Link to="/projects"    className={buttonClass} style={props.state.screen === "PROJECTS" ? currentStyle : null}    onClick={props.goProjects}>Projects</Link>
