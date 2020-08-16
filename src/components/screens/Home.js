@@ -44,16 +44,16 @@ function Home(props){
                         </a>       
                 </li>
 
-                <li className={getPageStyle(1)} onClick={()=>setSkill(1)}>        <a href="#!">1</a>      </li>
-                <li className={getPageStyle(2)} onClick={()=>setSkill(2)}>        <a href="#!">2</a>      </li>
-                <li className={getPageStyle(3)} onClick={()=>setSkill(3)}>        <a href="#!">3</a>      </li>
-                <li className={getPageStyle(4)} onClick={()=>setSkill(4)}>        <a href="#!">4</a>      </li>
-                <li className={getPageStyle(5)} onClick={()=>setSkill(5)}>        <a href="#!">5</a>      </li>
-                <li className={getPageStyle(6)} onClick={()=>setSkill(6)}>        <a href="#!">6</a>      </li>
-                <li className={getPageStyle(7)} onClick={()=>setSkill(7)}>        <a href="#!">7</a>      </li>
-                <li className={getPageStyle(8)} onClick={()=>setSkill(8)}>        <a href="#!">8</a>      </li>
-                <li className={getPageStyle(9)} onClick={()=>setSkill(9)}>        <a href="#!">9</a>      </li>
-                <li className={getPageStyle(10)} onClick={()=>setSkill(10)}>      <a href="#1">10</a>     </li>
+                <li className={getPageStyle(1)} onClick={()=>setSkill(1)} style={{fontSize:"0.5vw"}}>        <a href="#!">Skills</a>      </li>
+                <li className={getPageStyle(2)} onClick={()=>setSkill(2)}>        <a href="#!">Materialize</a>      </li>
+                <li className={getPageStyle(3)} onClick={()=>setSkill(3)}>        <a href="#!">React</a>      </li>
+                <li className={getPageStyle(4)} onClick={()=>setSkill(4)}>        <a href="#!">Redux</a>      </li>
+                <li className={getPageStyle(5)} onClick={()=>setSkill(5)}>        <a href="#!">MySQL</a>      </li>
+                <li className={getPageStyle(6)} onClick={()=>setSkill(6)}>        <a href="#!">MongoDB</a>      </li>
+                <li className={getPageStyle(7)} onClick={()=>setSkill(7)}>        <a href="#!">Git</a>      </li>
+                <li className={getPageStyle(8)} onClick={()=>setSkill(8)}>        <a href="#!">Node.JS</a>      </li>
+                <li className={getPageStyle(9)} onClick={()=>setSkill(9)}>        <a href="#!">Cron</a>      </li>
+                <li className={getPageStyle(10)} onClick={()=>setSkill(10)}>      <a href="#1">Languages</a>     </li>
 
                 <li 
                     className={skill !== 10 ? active_skill_change_style : disabled_skill_change_style} 

@@ -5,7 +5,7 @@ import {goHome, goProjects, goContactMe} from "../redux/currentScreen"
 
 function Navbar(props){
     const buttonClass="waves-effect btn-flat col s4"
-    const currentStyle={background:"#80AB82"}
+    const currentStyle={background:"#995D81", color:"white"}
 
     return(
         <div className="card" style={{ background:"#C2E1C2"}}>

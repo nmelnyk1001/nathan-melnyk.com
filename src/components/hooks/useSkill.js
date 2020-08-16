@@ -1,10 +1,20 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 
 function useSkill(){
     const [skill, setSkill] = useState(1)
 
     const disabled_skill_style = "wave-effect col s1"
     const active_skill_style = "active col s1"
+
+    useEffect(()=>{
+        const intervalID = setInterval(()=>{
+            setSkill((prevSkill)=>{
+                return prevSkill === 10 ? 1 : prevSkill + 1
+            })
+        },3000)
+
+        return () => clearInterval(intervalID)
+    },[])
 
     function increaseSkill() {
         if (skill !== 10) {
