@@ -2,10 +2,13 @@ import React from 'react'
 
 import useSkill from "../hooks/useSkill"
 function Home(props){
-    const {skill, setSkill, increaseSkill, decreaseSkill, displaySkill, getPageStyle} = useSkill()
+    const {skill, setSkill, displaySkill, getPageStyle} = useSkill()
 
-    const disabled_skill_change_style="disabled col s1"
-    const active_skill_change_style="active col s1"
+    const textStyle={
+        width:"100%",
+        textAlign:"left",
+        textSize:"0.5"
+    }
 
     return(
         <div>
@@ -36,32 +39,12 @@ function Home(props){
             </div>
 
             <ul className="pagination card row" style={{ background: "#C2E1C2"}}>
-                <li 
-                    className={skill !==1 ? active_skill_change_style : disabled_skill_change_style} 
-                    onClick={()=>decreaseSkill()}>            
-                        <a href="#!">           
-                            <i className="material-icons">chevron_left</i>      
-                        </a>       
-                </li>
-
-                <li className={getPageStyle(1)} onClick={()=>setSkill(1)} style={{fontSize:"0.5vw"}}>        <a href="#!">Skills</a>      </li>
-                <li className={getPageStyle(2)} onClick={()=>setSkill(2)}>        <a href="#!">Materialize</a>      </li>
-                <li className={getPageStyle(3)} onClick={()=>setSkill(3)}>        <a href="#!">React</a>      </li>
-                <li className={getPageStyle(4)} onClick={()=>setSkill(4)}>        <a href="#!">Redux</a>      </li>
-                <li className={getPageStyle(5)} onClick={()=>setSkill(5)}>        <a href="#!">MySQL</a>      </li>
-                <li className={getPageStyle(6)} onClick={()=>setSkill(6)}>        <a href="#!">MongoDB</a>      </li>
-                <li className={getPageStyle(7)} onClick={()=>setSkill(7)}>        <a href="#!">Git</a>      </li>
-                <li className={getPageStyle(8)} onClick={()=>setSkill(8)}>        <a href="#!">Node.JS</a>      </li>
-                <li className={getPageStyle(9)} onClick={()=>setSkill(9)}>        <a href="#!">Cron</a>      </li>
-                <li className={getPageStyle(10)} onClick={()=>setSkill(10)}>      <a href="#1">Languages</a>     </li>
-
-                <li 
-                    className={skill !== 10 ? active_skill_change_style : disabled_skill_change_style} 
-                    onClick={()=>increaseSkill()}>              
-                        <a href="#!">           
-                            <i className="material-icons">chevron_right</i>     
-                        </a>        
-                </li>
+                <li className={getPageStyle(1)} onClick={()=>setSkill(1)}>        <a href="#!" style={textStyle}>Materialize</a>      </li>
+                <li className={getPageStyle(2)} onClick={()=>setSkill(2)}>        <a href="#!">React</a>      </li>
+                <li className={getPageStyle(3)} onClick={()=>setSkill(3)}>        <a href="#!">MySQL</a>      </li>
+                <li className={getPageStyle(4)} onClick={()=>setSkill(4)}>        <a href="#!">MongoDB</a>      </li>
+                <li className={getPageStyle(5)} onClick={()=>setSkill(5)}>        <a href="#!">Git</a>      </li>
+                <li className={getPageStyle(6)} onClick={()=>setSkill(6)}>        <a href="#!">Node.JS</a>      </li>
             </ul>
         </div>
     )
