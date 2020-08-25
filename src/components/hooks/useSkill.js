@@ -1,22 +1,20 @@
-import React, {useState, useEffect} from "react"
+import React, { useState, useEffect } from "react"
 
-function useSkill(){
+function useSkill() {
     const [skill, setSkill] = useState(1)
 
-    const disabled_skill_style = "wave-effect col s1"
     const disabled_skill_big = "wave-effect col s2"
-    const active_skill_style = "active col s1"
     const active_skill_big = "active col s2"
 
-    useEffect(()=>{
-        const intervalID = setInterval(()=>{
-            setSkill((prevSkill)=>{
+    useEffect(() => {
+        const intervalID = setInterval(() => {
+            setSkill((prevSkill) => {
                 return prevSkill === 6 ? 1 : prevSkill + 1
             })
-        },3000)
+        }, 3000)
 
         return () => clearInterval(intervalID)
-    },[])
+    }, [])
 
     function increaseSkill() {
         if (skill !== 10) {
@@ -29,7 +27,7 @@ function useSkill(){
         }
     }
 
-    function getPageStyle(pageNum){
+    function getPageStyle(pageNum) {
         return skill === pageNum ? active_skill_big : disabled_skill_big
     }
 
@@ -37,30 +35,30 @@ function useSkill(){
         switch (skill) {
             case 1:
                 return (
-                    <div style={{ padding: 10, height:200, width:750 }}>
+                    <div style={{ padding: 10, height: 200, width: 750 }}>
                         <span className="card-title">Materialize</span>
                         <p>
-                            My CSS Library of choice. 
-                            This website, and most other front ends I make, are styled with it. 
+                            My CSS Library of choice.
+                            This website, and most other front ends I make, are styled with it.
                         </p>
                     </div>
                 )
             case 2:
                 return (
-                    <div style={{ padding: 10, height:200, width:750 }}>
+                    <div style={{ padding: 10, height: 200, width: 750 }}>
                         <span className="card-title">React / Redux</span>
                         <p>
-                            Frontend library of choice. 
+                            Frontend library of choice.
                             This website alone makes use of components, hooks, router, and state.
                         </p>
                     </div>
                 )
             case 3:
                 return (
-                    <div style={{ padding: 10, height:200, width:750 }}>
+                    <div style={{ padding: 10, height: 200, width: 750 }}>
                         <span className="card-title">MySQL/SQLite</span>
                         <p>
-                            Used in Discord Birthday bot to keep track of users birthdays in a clean and neat fashion. 
+                            Used in Discord Birthday bot to keep track of users birthdays in a clean and neat fashion.
                             Makes data lookup easier as well, when compared to a dictionary or NoSQL database.
                         </p>
                     </div>
@@ -70,7 +68,7 @@ function useSkill(){
                     <div style={{ padding: 10, height: 200, width: 750 }}>
                         <span className="card-title">MongoDB</span>
                         <p>
-                            NoSQL library of choice for when MySQL isn't the right database to use for the task. 
+                            NoSQL library of choice for when MySQL isn't the right database to use for the task.
                         </p>
                     </div>
                 )
@@ -79,7 +77,7 @@ function useSkill(){
                     <div style={{ padding: 10, height: 200, width: 750 }}>
                         <span className="card-title">Github</span>
                         <p>
-                            Used on all personal and class projects for version control. 
+                            Used on all personal and class projects for version control.
                             Allows for easy group collaboration and organization.
                         </p>
                     </div>
@@ -103,7 +101,7 @@ function useSkill(){
         }
     }
 
-    return {skill, setSkill, increaseSkill, decreaseSkill, displaySkill, getPageStyle}
+    return { skill, setSkill, increaseSkill, decreaseSkill, displaySkill, getPageStyle }
 }
 
 export default useSkill
