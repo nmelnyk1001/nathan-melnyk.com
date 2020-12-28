@@ -8,9 +8,9 @@ import ContactMe from "./components/screens/ContactMe"
 
 function App(props) {
   return (
-    <div className="App" style={{padding:20, background:"#253031"}}>
-      <div className="container">
-        <Navbar />
+    <div className="App" style={{padding:1, background:"#253031"}}>
+      <div className="container" style={{width:"100%", maxWidth:"100%"}}>
+        <Navbar style={{margin:0}}/>
         <Switch>
           <Route exact path="/">
             <Home />
