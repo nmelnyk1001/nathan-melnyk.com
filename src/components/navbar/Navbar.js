@@ -8,8 +8,8 @@ function Navbar(props){
     const currentStyle={fontWeight: "bold", textDecoration: "underline"}
 
     return(
-        <div className="" style={{ background:"#C2E1C2"}}>
-            <div className="container row">
+        <div style={{ background:"#D7B870"}}>
+            <div className="container row" style={{maxWidth: "100%", width: "100%", textAlign:"center"}}>
                 <Link to="/"            className={buttonClass} style={props.state.screen === "HOME" ? currentStyle : null}        onClick={props.goHome}>Home</Link>
                 <Link to="/projects"    className={buttonClass} style={props.state.screen === "PROJECTS" ? currentStyle : null}    onClick={props.goProjects}>Projects</Link>
                 <Link to="/contact_me"  className={buttonClass} style={props.state.screen === "CONTACT_ME" ? currentStyle : null}  onClick={props.goContactMe}>Contact Me</Link>
