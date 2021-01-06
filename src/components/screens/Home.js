@@ -13,25 +13,24 @@ function Home(props){
     return(
         <div>
             <div className="card" style={{background: "#C2E1C2"}}>
-                <div className="card-content">
-                    <div style={{display:"inline-block", width:"20%", float:"left"}}><img src={headshot} alt="headshot" height="100%" width="100%" borderRadius="50px"/></div>
-                    <div style={{textAlign: "center", width: "80%", left: "20%", float:"right"}}>
-                        <h1>Nathan Melnyk</h1>
-                        <p>
-                            Good day! I'm a college student attending Stonybrook University, set to graduate December 2020. 
-                            During my school career, I became the treasurer for the Science Fiction Forum for two years, budgeting for events, library items, and even our 50th anniversary.
-                            Outside of school I'm an avid athlete and craftsperson! 
-                        </p>
-                        <p>
-                            In 2017, I became a gold medalist in the Junior Division of the World Team Cup, held in Sardinia, Italy.
-                            To this day, I'm part of the High Performance team for the USTA.
-                        </p>
-                        <p>
-                            In addition, I crochet and knit for stress relief! Creating beautiful scarves, beanies, and even plushies both from patterns and scratch.
-                        </p>
-                        <p>
-                            Finally, I'm an enthusiastic home cook and baker, trying to further my skills in the free time I have.
-                        </p>
+                <div className="card-content white-text" style={{ background:"#0D1321", padding:"5px"}}>
+                    <div>
+                        <img style={{float:"left", width:"20%", height:"80%"}} src={headshot} alt="headshot" height="100%" width="100%" borderRadius="50px"/>
+                        <div>
+                            <h1 style={{float:"right"}}>Nathan Melnyk</h1>
+                            <p style={{float:"right"}}>
+                                Good day! I'm a college student attending Stonybrook University, set to graduate December 2020. 
+                                During my school career, I became the treasurer for the Science Fiction Forum for two years, budgeting for events, library items, and even our 50th anniversary.
+                                Outside of school I'm an avid athlete and craftsperson! 
+
+                                In 2017, I became a gold medalist in the Junior Division of the World Team Cup, held in Sardinia, Italy.
+                                To this day, I'm part of the High Performance team for the USTA.
+
+                                In addition, I crochet and knit for stress relief! Creating beautiful scarves, beanies, and even plushies both from patterns and scratch.
+
+                                Finally, I'm an enthusiastic home cook and baker, trying to further my skills in the free time I have.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
