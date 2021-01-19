@@ -14,11 +14,11 @@ function Home(props){
         <div>
             <div className="card" style={{background: "#C2E1C2"}}>
                 <div className="card-content white-text" style={{ background:"#0D1321", padding:"5px"}}>
-                    <div>
-                        <img style={{float:"left", width:"20%", height:"80%"}} src={headshot} alt="headshot" height="100%" width="100%" borderRadius="50px"/>
-                        <div>
-                            <h1 style={{float:"right"}}>Nathan Melnyk</h1>
-                            <p style={{float:"right"}}>
+                    <div className="row">
+                        <img className="col s4" style={{width:"20%", height:"80%",borderRadius:"50%", margin:"auto"}} src={headshot} alt="headshot" height="100%" width="100%"/>
+                        <div className="col s8">
+                            <h1 style={{}}>Nathan Melnyk</h1>
+                            <p style={{}}>
                                 Good day! I'm a college student attending Stonybrook University, set to graduate December 2020. 
                                 During my school career, I became the treasurer for the Science Fiction Forum for two years, budgeting for events, library items, and even our 50th anniversary.
                                 Outside of school I'm an avid athlete and craftsperson! 
