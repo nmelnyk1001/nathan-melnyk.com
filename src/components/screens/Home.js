@@ -15,7 +15,7 @@ function Home(props){
             <div className="card" style={{background: "#C2E1C2"}}>
                 <div className="card-content black-text" style={{ background:"#D7B870", padding:"5px"}}>
                     <div className="row" style={{marginBottom:"0px"}}>
-                        <img className="col s4" style={{borderRadius:"50%", margin:"auto"}} src={headshot} alt="headshot" max-height="300px" height="100%" width="100%"/>
+                        <img className="col s4" style={{borderRadius:"50%", margin:"auto", maxHeight:"300px", maxWidth:"300px"}} src={headshot} alt="headshot" height="100%" width="100%"/>
                         <div className="col s8">
                             <h1>Nathan Melnyk</h1>
                             <p>
