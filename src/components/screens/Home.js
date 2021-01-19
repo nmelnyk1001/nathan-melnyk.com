@@ -17,18 +17,17 @@ function Home(props){
                     <div className="row" style={{marginBottom:"0px"}}>
                         <img className="col s4" style={{borderRadius:"50%", margin:"auto", maxHeight:"300px", maxWidth:"300px"}} src={headshot} alt="headshot" height="100%" width="100%"/>
                         <div className="col s8">
-                            <h1>Nathan Melnyk</h1>
+                            <h1 style={{margin:"2%"}}>Nathan Melnyk</h1>
                             <p>
-                                Good day! I'm a college student attending Stonybrook University, set to graduate December 2020. 
-                                During my school career, I became the treasurer for the Science Fiction Forum for two years, budgeting for events, library items, and even our 50th anniversary.
-                                Outside of school I'm an avid athlete and craftsperson! 
+                                I'm a senior studying computer science at Stony Brook University. Through my studies, I've
+                                grown to love web development! Though my preference lies within the front end, I've learned 
+                                to handle back end as well as cloud deployment. 
 
-                                In 2017, I became a gold medalist in the Junior Division of the World Team Cup, held in Sardinia, Italy.
-                                To this day, I'm part of the High Performance team for the USTA.
+                                In addition, I became the treasurer for the Science Fiction Forum, budgeting for events, library items, and even our 50th anniversary.
 
-                                In addition, I crochet and knit for stress relief! Creating beautiful scarves, beanies, and even plushies both from patterns and scratch.
+                                In 2017, I became a gold medalist in the Junior Division of the World Team Cup, held in Sardinia, Italy playing as part of the High Performance team for the USTA.
 
-                                Finally, I'm an enthusiastic home cook and baker, trying to further my skills in the free time I have.
+                                Outside of school and athletics I knit, crochet, cook, and bake for stress relief! 
                             </p>
                         </div>
                     </div>
