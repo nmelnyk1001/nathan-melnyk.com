@@ -9,7 +9,7 @@ function Navbar(props){
     const normalStyle = { color: "#E1CA96"}
 
     return(
-        <div style={{ background:"#0D1321"}}>
+        <div style={{ background:"#0D1321", boxShadow:"0px 2px 5px"}}>
             <div className="container row" style={{ maxWidth: "100%", width: "100%", textAlign: "center"}}>
                 <Link to="/"            className={buttonClass} style={props.state.screen === "HOME" ? currentStyle : normalStyle}        onClick={props.goHome}>Home</Link>
                 <Link to="/projects"    className={buttonClass} style={props.state.screen === "PROJECTS" ? currentStyle : normalStyle}    onClick={props.goProjects}>Projects</Link>
