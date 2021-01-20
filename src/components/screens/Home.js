@@ -1,21 +1,13 @@
 import React from 'react'
-import useSkill from "../hooks/useSkill"
 import headshot from "../images/headshot.jpg"
+
 function Home(props){
-    const {skill, setSkill, displaySkill, getPageStyle} = useSkill()
-
-    const textStyle={
-        width:"100%",
-        textAlign:"left",
-        textSize:"0.5"
-    }
-
     return(
         <div>
-            <div className="card" style={{background: "#C2E1C2"}}>
-                <div className="card-content black-text" style={{ background:"#D7B870", padding:"5px"}}>
+            <div className="card" style={{boxShadow:"0px 0px 0px"}}>
+                <div className="card-content black-text" style={{ background:"#E1CA96", padding:"5px"}}>
                     <div className="row" style={{marginBottom:"0px"}}>
-                        <img className="col s4" style={{borderRadius:"50%", margin:"auto", maxHeight:"300px", maxWidth:"300px"}} src={headshot} alt="headshot" height="100%" width="100%"/>
+                        <img className="col s4" style={{margin:"auto", maxHeight:"300px", maxWidth:"300px"}} src={headshot} alt="headshot" height="100%" width="100%"/>
                         <div className="col s8">
                             <h1 style={{margin:"2%"}}>Nathan Melnyk</h1>
                             <p>
@@ -33,19 +25,40 @@ function Home(props){
                     </div>
                 </div>
             </div>
-            {/*
-            <div className="card" style={{ background: "#C2E1C2"}}>
-                {displaySkill(skill)}
+            <div style={{background:"#D7B870"}}>
+                <div className="container">
+                    <h3 style={{textAlign:"center", paddingTop:"3%"}}>Skills</h3>
+                    <div className="divider" style={{color:"black",boxShadow:"0px 2px 5px"}}></div>
+
+                    <div className="row" style={{ marginBottom: "0px", paddingTop: "2%"}}>
+                        <div className="col s2"></div>
+                        <div className="col s2" style={{ background: "#D7B870", textAlign:"center", padding:"2%", fontSize:"26px"}}>React</div>
+                        <div className="col s1"></div>
+                        <div className="col s2" style={{ background: "#D7B870", textAlign:"center", padding:"2%", fontSize:"26px"}}>Materialize</div>
+                        <div className="col s1"></div>
+                        <div className="col s2" style={{ background: "#D7B870", textAlign:"center", padding:"2%", fontSize:"26px"}}>Github</div>
+                        <div className="col s2"></div>
+                    </div>
+                    <div className="row" style={{ marginBottom: "0px", paddingTop: "2%" }}>
+                        <div className="col s2"></div>
+                        <div className="col s2" style={{ background: "#D7B870", textAlign: "center", padding: "2%", fontSize: "26px" }}>MySQL</div>
+                        <div className="col s1"></div>
+                        <div className="col s2" style={{ background: "#D7B870", textAlign: "center", padding: "2%", fontSize: "26px" }}>Nginx</div>
+                        <div className="col s1"></div>
+                        <div className="col s2" style={{ background: "#D7B870", textAlign: "center", padding: "2%", fontSize: "26px" }}>Node.JS</div>
+                        <div className="col s2"></div>
+                    </div>
+                    <div className="row" style={{ marginBottom: "0px", paddingTop: "2%", paddingBottom:"1.5%"}}>
+                        <div className="col s2"></div>
+                        <div className="col s2" style={{ background: "#D7B870", textAlign: "center", padding: "2%", fontSize: "26px" }}>Python</div>
+                        <div className="col s1"></div>
+                        <div className="col s2" style={{ background: "#D7B870", textAlign: "center", padding: "2%", fontSize: "26px" }}>C</div>
+                        <div className="col s1"></div>
+                        <div className="col s2" style={{ background: "#D7B870", textAlign: "center", padding: "2%", fontSize: "26px" }}>Javascript</div>
+                        <div className="col s2"></div>
+                    </div>
+                </div>
             </div>
-            
-            <ul className="pagination card row" style={{ background: "#C2E1C2"}}>
-                <li className={getPageStyle(1)} onClick={()=>setSkill(1)}>        <a href="#!" style={textStyle}>Materialize</a>      </li>
-                <li className={getPageStyle(2)} onClick={()=>setSkill(2)}>        <a href="#!">React</a>      </li>
-                <li className={getPageStyle(3)} onClick={()=>setSkill(3)}>        <a href="#!">MySQL</a>      </li>
-                <li className={getPageStyle(4)} onClick={()=>setSkill(4)}>        <a href="#!">MongoDB</a>      </li>
-                <li className={getPageStyle(5)} onClick={()=>setSkill(5)}>        <a href="#!">Git</a>      </li>
-                <li className={getPageStyle(6)} onClick={()=>setSkill(6)}>        <a href="#!">Node.JS</a>      </li>
-            </ul>*/}
         </div>
     )
 }
