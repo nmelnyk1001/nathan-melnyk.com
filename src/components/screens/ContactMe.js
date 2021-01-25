@@ -17,7 +17,6 @@ function ContactMe(props){
         <div>
             <div style={{ paddingBottom: "1%", paddingTop: "0.5%" }}>
                 <p style={{ fontFamily:"'Merriweather', serif", fontWeight: "bold", fontSize: "40px", paddingLeft: "2%", paddingBottom: "0.5%", marginBottom:"0.5%" }}>Nathan Melnyk</p>
-                <p style={{ fontFamily:"'Raleway', sans-serif", paddingTop: "0%", paddingLeft: "5%", fontSize: "22px" }}>Phone Number: +1(631)452-4263</p>
                 <p style={{ fontFamily:"'Raleway', sans-serif", paddingTop: "0%", paddingLeft: "5%", fontSize: "22px" }}>Long Island, New York</p>
             </div>
 

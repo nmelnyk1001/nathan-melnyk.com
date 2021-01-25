@@ -27,7 +27,7 @@ function Projects(props){
     }
     
     return(
-        <div>
+        <div style={{ background:"#E1CA96" }}>
             <div style={cardStyle}>
                 <p style={nameStyle}>Personal Website</p>
                 <p style={descStyle}>
